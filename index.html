@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>habibi highwaying it</title>
+    <style>
+      html,body{height:100%;margin:0}
+      /* Background image from the same folder */
+      body{
+        background-image: url('ohyeah.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* ensure content is readable on top of image */
+        color: #fff;
+      }
+      /* optional dim overlay to improve contrast */
+      .bg-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.35);z-index:0}
+
+      /* Center the iframe and limit its size so it's not fullscreen */
+      .wrap{display:flex;align-items:center;justify-content:center;height:100%;padding:2rem;position:relative;z-index:1}
+      /* container for frame */
+      .frame-container{position:relative;width:100%;max-width:1280px}
+      /* larger default size: 1280x720 with responsive fallback */
+      iframe{width:100%;height:720px;border:0;display:block;box-shadow:0 8px 26px rgba(0,0,0,0.3)}
+  /* heading above the frame */
+  .page-title{text-align:center;margin:0 0 1rem 0;font-size:2.25rem;font-weight:700;letter-spacing:0.5px;text-shadow:0 2px 6px rgba(0,0,0,0.6)}
+
+  @media (max-width:1000px){iframe{height:600px}}
+  @media (max-width:600px){iframe{height:420px}.page-title{font-size:1.5rem}}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div style="width:100%;max-width:1280px">
+        <h1 class="page-title">habibi highwaying it</h1>
+        <div class="frame-container">
+          <iframe src="https://play.gamepix.com/east-runner/embed?sid=e4515" title="East Runner game embed" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
